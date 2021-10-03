@@ -10,10 +10,29 @@ justify-content: center;
 display:flex;
 flex-direction: column;
 align-items: center;
+justify-content: first baseline;
+
+//background: red;
 background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0e/1f/26/c1/atardecer.jpg");
 background-repeat: no-repeat;
-height: 800px;
-width: 800px;
+background-size: cover;
+height: 500px;
+width: 90%;
+h1{
+font-size: 30px ;
+font-family: 'Trebuchet MS', sans-serif;
+font-weight: bold;
+padding: 5rem;
+.btn{
+border-radius: 4px;
+font-family: 'Trebuchet MS', sans-serif;
+font-weight: bold;
+background: red;
+}
+
+}
+
+
 }
 `;
 
@@ -22,9 +41,10 @@ export default function Inicio() {
     return (
         <InicioStyled>
         <div className="container">
-              soy inicio
 
-              <button href="/home">Home</button>
+              <h1> BeerBike Pipa... </h1>
+
+              <a  href="http://localhost:3000/home"> <button className="btn"> Home</button> </a> 
         </div>
         </InicioStyled>
     )
